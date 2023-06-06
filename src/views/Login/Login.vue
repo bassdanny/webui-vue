@@ -1,5 +1,6 @@
 <template>
   <b-form class="login-form" novalidate @submit.prevent="login">
+    <label>Hello from the 15 month old code, congrats you found me:</label>
     <alert class="login-error mb-4" :show="authError" variant="danger">
       <p id="login-error-alert">
         {{ $t('pageLogin.alert.message') }}
