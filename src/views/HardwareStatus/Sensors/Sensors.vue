@@ -1,3 +1,4 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
   <b-container fluid="xl">
     <page-title />
@@ -97,10 +98,13 @@
         </b-table>
       </b-col>
     </b-row>
+    <psu-readings></psu-readings>
   </b-container>
+  
 </template>
 
 <script>
+import PsuReadings from './PsuReadings.vue';
 import PageTitle from '@/components/Global/PageTitle';
 import Search from '@/components/Global/Search';
 import StatusIcon from '@/components/Global/StatusIcon';
@@ -132,6 +136,7 @@ export default {
     TableFilter,
     TableToolbar,
     TableToolbarExport,
+    PsuReadings,
   },
   mixins: [
     TableFilterMixin,
